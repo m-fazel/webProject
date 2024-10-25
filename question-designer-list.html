@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>سامانه پروژه سوال پیج | مدیریت سوالات | طراح</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dashboard-designer.html">سوال پیج</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="dashboard-designer.html">داشبورد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="question-designer-list.html">مدیریت سوالات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category-designer-list.html">مدیریت دسته بندی ها</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container pt-4">
+        <div class="mb-4">
+            <a href="question-designer-add.html" class="btn btn-primary">افزودن سوال جدید</a>
+        </div>
+        <h4 class="mb-4">سوالات طراحی شده</h4>
+        <table class="table table-striped">
+            <tr>
+                <th class="col-1">#</th>
+                <th class="col-6">صورت سوال</th>
+                <th>تعداد پاسخ های صحیح</th>
+                <th>تعداد پاسخ های غلط</th>
+                <th>عملیات</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>html چیست؟</td>
+                <td>20</td>
+                <td>10</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#question-1-similar">
+                        انتخاب سوالات مشابه
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>css چیست؟</td>
+                <td>10</td>
+                <td>15</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#question-2-similar">
+                        انتخاب سوالات مشابه
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal fade" id="question-1-similar" tabindex="-1" aria-labelledby="question-1-similar"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="" method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title">افزودن سوالات مشابه</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <b>html چیست؟</b>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="question-2-1">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                css چیست؟
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="question-2-3">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                سوال از طراح دیگر
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">خروج</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="question-2-similar" tabindex="-1" aria-labelledby="question-2-similar"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="" method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title">افزودن سوالات مشابه</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <b>css چیست؟</b>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="question-2-1">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                html چیست؟
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="question-2-3">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                سوال از طراح دیگر
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">خروج</button>
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
